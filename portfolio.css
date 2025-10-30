@@ -1,0 +1,161 @@
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, rgba(255,182,193,0.9), rgba(204,255,204,0.9), rgba(221,160,221,0.9));
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #b02892;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #7a00ff;
+    transform: scale(1.1);
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Section */
+.profile-img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 4px solid #d66dff;
+    display: block;
+    margin: 0 auto 20px;
+    transition: transform 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #800080;
+    text-align: center;
+}
+
+/* Paragraphs */
+p {
+    text-align: center;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Lists */
+ul {
+    list-style: circle;
+    margin-left: 30px;
+    color: #444;
+}
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #4b0082;
+    font-weight: 500;
+}
+
+input, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #b34fcf;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    background-color: #d66dff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #9f50cc;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: rgba(204, 255, 204, 0.9);
+    text-align: center;
+    padding: 20px;
+    color: #444;
+    border-top: 3px solid #b34fcf;
+    backdrop-filter: blur(3px);
+}
+
+footer a {
+    color: #7a00ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff69b4;
+}
